@@ -1,0 +1,32 @@
+/*
+ * Copyright (c) 2023 Atom-X-Devs.
+ * Divyanshu-Modi <divyan.m05@gmail.com>
+ *
+ * Xiaomi SM4450 based SKY platform specific
+ */
+
+#include "ravelin-audio-qrd.dtsi"
+
+&wcd937x_codec {
+	qcom,cdc-micbias1-mv = <2700>;
+	qcom,cdc-micbias2-mv = <2700>;
+	qcom,cdc-micbias3-mv = <2700>;
+};
+
+&qupv3_se1_i2c {
+	aw87xxx_pa@58 {
+		compatible = "awinic,aw87xxx_pa";
+		reg = <0X58>;
+		status = "okay";
+
+		dev_index = <0>;
+		aw-rx-port-id = <0X4000>;
+		aw-rx-topo-id = <0X1000FF01>;
+	};
+
+	fs15xx_pa@34 {
+		compatible = "foursemi,fs15xx";
+		reg = <0x34>;
+		status = "okay";
+	};	
+};

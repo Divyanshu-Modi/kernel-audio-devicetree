@@ -1,4 +1,3 @@
-
 dtbo-$(CONFIG_ARCH_WAIPIO) += waipio-audio.dtbo \
                  waipio-audio-cdp.dtbo \
                  waipio-audio-mtp.dtbo \
@@ -29,7 +28,8 @@ dtbo-$(CONFIG_ARCH_RAVELIN) += ravelin-audio.dtbo \
                  ravelin-audio-idp.dtbo \
                  ravelin-audio-idp-4gb.dtbo \
                  ravelin-audio-qrd.dtbo \
-                 ravelin-audio-atp.dtbo
+                 ravelin-audio-atp.dtbo \
+                 sky-audio.dtbo
 
 dtbo-$(CONFIG_ARCH_CAPE) += cape-audio.dtbo \
                  cape-audio-cdp.dtbo \
